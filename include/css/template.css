@@ -1,0 +1,379 @@
+@CHARSET "UTF-8";
+
+/*    General Rules    */
+.hidden {
+	display: none;
+}
+
+br {
+	clear: both;
+}
+
+p {
+	margin: 10px 0;
+	padding: 0;	
+}
+
+p:first-child {
+	margin-top: 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+em {
+	font-style: normal;
+}
+
+.italic {
+	font-style: italic;
+}
+
+
+a, a:hover, a:active, a:link {
+	text-decoration: none;
+	color: #d1d1d1;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+}
+
+#name > a:active > span {
+	broder: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+/*    Main Template Rules    */
+body {
+	background-image: url('/images/bg.png');
+	background-repeat: repeat;	
+	color: #2f2f2f;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+/*body.home*/ #container-wrapper {
+	width: 950px;
+	margin: 10px auto;
+	padding: 20px 0;
+	border-radius: 5px;
+	background-image: url('/images/tile.png');
+	background-repeat: repeat;
+}
+
+#container {
+	width: 872px;
+	margin: 0 auto;
+	color: #2f2f2f;
+}
+
+body.home #container {
+	width: 834px;
+	color: #d1d1d1;
+}
+
+
+/*    Other Pages    */
+
+#header {
+	height: 200px;
+	padding: 0;
+	margin: 0;
+	background-image: url('/images/tile.png');
+	background-repeat: repeat;	
+	color: #d1d1d1;
+}
+
+#divider {
+	height: 7px;
+	padding: 0;
+	margin: 0 0 60px 0;
+	background-image: url('/images/ver.png');
+	background-repeat: repeat-x;
+	background-position: 0 0;
+}
+
+#header-container {
+	width: 872px;
+	height: 200px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#head-icon {
+	width: 129px;
+	height: 133px;
+	float: left;
+	background-image: url('/images/sprite.png');
+	background-repeat: no-repeat;
+	background-position: -803px 0;
+	margin: 30px 0 0 0;
+}
+
+#firstname {
+	display: block;
+	font-family: 'Sanchez', serif;
+	font-size: 15px;	
+}
+
+#lastname {
+	display: block;
+	text-transform: uppercase;
+	font-family: 'Sanchez', serif;
+	font-size: 15px;
+}
+
+#lastname:first-letter {
+	font-size: 25px;
+}
+
+#name {
+	line-height: 10px;
+	margin: 127px 0 0 22px;
+	float: left;
+	width: 113px;
+}
+
+#menu {
+	font-family: 'Sanchez', serif;
+	font-size: 16px;
+	letter-spacing: -0.3px;
+	width: 493px;
+	height: 100px;
+	margin: 111px 0 0 114px;
+	padding: 0;
+	float: left;
+}
+
+#menu > li {
+	margin: 0;
+	padding: 0;
+}
+
+#menu-cv {
+	width: 191px;
+	float: left;
+	clear: left;
+}
+
+#menu-we {
+	width: 302px;
+	float: left;
+	clear: right;
+}
+
+#menu-cv, #menu-we {
+	border-bottom: 5px solid #d1d1d1;
+	height: 26px;
+}
+
+#menu-pp {
+	width: 216px;
+	float: left;
+	clear: left;
+	text-align: right;
+	padding-top: 10px;
+}
+
+#menu-sl {
+	width: 277px;
+	float:left;
+	clear: right;
+	text-align: right;
+}
+
+#menu-pp, #menu-sl {
+	line-height: 28px;
+}
+
+#copyright {
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size: 12px;
+	color: #656565;
+	text-align: center;
+	clear: both;
+	margin: 33px 0 20px 0;
+}
+
+
+/*    Home Page    */
+#heading {
+	height: 266px;
+}
+
+body.home #head-icon {
+	width: 195px;
+	height: 199px;
+	float: left;
+	background-image: url('/images/sprite.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	margin: 0 70px 67px 0;
+}
+
+body.home #title {
+	width: 227px;
+	height: 266px;
+	float: left;
+}
+
+body.home #firstname {
+	display: block;
+	font-family: 'Sanchez', serif;
+	font-size: 30px;	
+}
+
+body.home #lastname {
+	display: block;
+	text-transform: uppercase;
+	font-family: 'Sanchez', serif;
+	font-size: 30px;
+}
+
+body.home #lastname:first-letter {
+	font-size: 45px;
+}
+
+body.home #name {
+	line-height: 18px;
+	margin: 136px 0 0 0;
+	float: none;
+	width: auto;
+}
+
+body.home #email {
+	width: 164px;
+	height: 16px;
+	margin: 15px 0 0 0;
+	padding: 0;
+	background-image: urL('/images/email.png');
+	background-repeat:no-repeat;
+}
+
+body.home #profiles {
+	width: 93px;
+	height: 127px;
+	margin: 66px 0 0 228px;
+	padding: 6px 0 0 21px;
+	float: left;
+	background-image: url('/images/sprite.png');
+	background-repeat: no-repeat;
+	background-position: -689px 0;
+}
+
+body.home #profiles * {
+	font-family: 'Sanchez', serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.3px;
+	color: #2f2f2f;	
+}
+
+body.home #profiles a:hover {
+	color: #000;
+	text-decoration: underline;
+	/*letter-spacing: 0;*/
+}
+
+body.home #body-left {
+	width: 492px;
+	float: left;
+}
+
+body.home #body-right {
+	width:227px;
+	margin: 0 0 0 115px;
+	float: left;	
+}
+
+body.home #summary {
+	width: 473px;
+	height: 192px;	
+	background-image: url('/images/sprite.png');
+	background-repeat: no-repeat;
+	background-position: -196px 0;
+	margin: 0;
+	padding: 4px 10px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.8em;
+	line-height:1.2em;
+	text-align: justify;
+	color: #2f2f2f;
+}
+
+body.home #copyright {
+	font-family: 'Yanone Kaffeesatz', sans-serif;	
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 22px 0 0 0;
+	text-align: left;
+	color: #d1d1d1;
+}
+
+body.home #menu {
+	width: 192px;
+	line-height: 1em;
+	text-align: right;
+	margin: 0 0 27px 0;
+	padding: 0 15px;
+	border-style: solid;
+	border-width: 0 5px 0 0;
+	border-color: #d1d1d1;
+	float: none;
+}
+
+body.home #menu > li
+{
+	display: block;
+	height: 30px;
+}
+
+body.home #menu li:last-child {
+	height: auto;
+}
+
+body.home #fields {
+	width: 192px;
+	font-family: 'Sanchez', serif;
+	font-size: 16px;
+	line-height: 1em;
+	letter-spacing: -0.3px;
+	text-align: left;
+	margin: 0;
+	padding: 0 15px;
+	border-style: solid;
+	border-width: 0 0 0 5px;
+	border-color: #d1d1d1;
+}
+
+body.home #fields > li
+{
+	display: block;
+	height: 30px;
+}
+
+body.home #fields li:last-child {
+	height: auto;
+}

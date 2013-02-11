@@ -1,0 +1,1 @@
+<div id="copyright">&copy; Of course designed and implemented by Mohammad Ali Sharpasand</div>

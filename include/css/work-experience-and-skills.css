@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+#skills, #work-experience {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 16px;
+	color: #2f2f2f;
+	text-align: justify;
+}
+
+#skills a, #work-experience a {
+	color: #2f2f2f;
+	text-decoration: underline;
+}
+
+#skills a:hover, #work-experience a:hover {
+	color: #2f2f2f;
+	text-decoration: none;
+	color: #000;
+}
+
+#skills h3, #work-experience h3 {
+	margin: 0 0 10px 0;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+#skills > li, #work-experience > li {
+	margin: 0 0 33px 0;
+}
+
+#skills {
+	width: 265px;
+	margin: 0 114px 0 0;
+	padding: 0;
+	float: left;
+}
+
+#work-experience {
+	width: 493px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	letter-spacing: 1.3px;
+	line-height: 22px;
+}

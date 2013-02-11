@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+#container.fields {
+	width: 581px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 12pt;
+	letter-spacing: 0.2pt;
+	line-height: 1.3em;
+	text-align: justify;
+}
+
+
+#container.fields a {
+	color: #2f2f2f;
+	text-decoration: underline;
+}
+
+#container.fields a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+#container.fields > h2 {
+	margin: 0 0 20px 0;
+}
+
+#container.fields ul {
+	list-style: circle;
+	margin: 0 0 0 20px;
+}
