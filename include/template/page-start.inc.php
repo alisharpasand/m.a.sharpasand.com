@@ -18,7 +18,7 @@
 </style>
 </head>
 
-<body<?php if($home) echo ' class="home"'; ?>>
+<body<?php if(@ $home) echo ' class="home"'; ?>>
 <!--	<script type="text/javascript">-->
 <!--	-->
 <!--	  var _gaq = _gaq || [];-->
