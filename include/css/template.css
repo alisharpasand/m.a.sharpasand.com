@@ -1,5 +1,3 @@
-@CHARSET "UTF-8";
-
 /*    General Rules    */
 .hidden {
 	display: none;
@@ -50,7 +48,7 @@ a:hover {
 }
 
 #name > a:active > span {
-	broder: none;
+	broder-style: none;
 }
 
 ul {
