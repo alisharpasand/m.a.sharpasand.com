@@ -4,8 +4,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta name="description" content="<?php @ echo $description; ?>" />
+<meta name="keywords" content="<?php @ echo $keywords; ?>" />
 
 <title>Mohammad Ali Sharpasand's personal website</title>
 <style type="text/css" media="screen">
