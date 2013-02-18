@@ -1,4 +1,4 @@
-target	<div id="container-wrapper">
+	<div id="container-wrapper">
 		<div id="container">
 			<div id="heading">
 				<div id="head-icon">&nbsp;</div>
