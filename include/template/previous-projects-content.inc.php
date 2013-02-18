@@ -17,7 +17,6 @@
 			</ul>
 		</div>
 		<div id="projects-scene"><?php
-				$id = @$_GET['project_id'] ? $_GET['project_id'] : 8;
 				$query = "SELECT `title`, `summary`, `link`, `banner_image_top` FROM `previous_projects` WHERE `id`=" .$id;
 				$result = mysqli_query($db, $query);
 				$line = mysqli_fetch_array($result);
