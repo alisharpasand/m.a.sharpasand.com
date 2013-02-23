@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /include/
+Disallow: /images/
+
+Sitemap: http://m.a.sharpasand.com/Sitemap.xml 
