@@ -7,7 +7,7 @@
 <meta name="description" content="<?php echo @ $description; ?>" />
 <meta name="keywords" content="<?php echo @ $keywords; ?>" />
 
-<title>Mohammad Ali Sharpasand's personal website</title>
+<title><?php echo @ $home ? "" : ($title . " § ") ?>Mohammad Ali Sharpasand</title>
 <style type="text/css" media="screen">
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(http://fonts.googleapis.com/css?family=Sanchez);

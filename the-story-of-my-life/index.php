@@ -3,6 +3,7 @@
 	$include_path = $_SERVER['DOCUMENT_ROOT'] . '/include/';
 	$description = "Here is where I write what I need to say about my life. I&rsquo;ve had many stories that I feel I should say them somewhere. The most important ones are to be written here.";
 	$keywords = "Sharpasand, Mohammad Ali, Interests, Activities, Stories, Dreams, Plans, Opinions, Blog";
+	$title = "The Story of My Life";
 
 	require_once	$include_path . 'template/page-start.inc.php';
 	require_once	$include_path . 'template/header.inc.php';

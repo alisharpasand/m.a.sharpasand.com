@@ -12,6 +12,7 @@
 
 	$description = $line["description"];
 	$keywords = $line["keywords"];
+	$title = $line["title"] . " § Previous Projects";
 
 	require_once	$include_path . 'template/page-start.inc.php';
 	require_once	$include_path . 'template/header.inc.php';
