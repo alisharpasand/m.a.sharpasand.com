@@ -7,3 +7,4 @@ This is the whole source code of my personal website [m.a.sharpasand.com](http:/
 I have made this repo both for my convenience and showcasing my method of work.
 As my profession is webdesign, this is a good example of my work for purposes of projects, or co-operation.
 Please note that this is a sample of a not object oriented work, I do work object oriented on projects, a little bit bigger.
+As this is my own website, there was no need to load most of data from database so most of them are statically entered in the files.
