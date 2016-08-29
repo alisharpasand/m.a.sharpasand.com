@@ -100,9 +100,11 @@ h1 {
 }
 h2 {
   font-size: 2em;
+  line-height: 1.3em;
 }
 h3 {
   font-size: 1.5em;
+  line-height: 1.3em;
 }
 h4 {
   font-size: 1.3em;
@@ -132,18 +134,40 @@ h4 {
 #dream #internetmap > img {
   visibility: hidden;
 }
-#dream p {
-  margin: 1em 5vw;
+#dream div.text {
+  padding: 1em 5vw;
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
+  column-fill: auto;
+  -moz-column-fill: auto;
+  height: 27.777777777777782vh;
+  box-sizing: border-box;
+}
+#dream div.text em,
+#dream div.text blockquote {
+  font-family: Lobster, cursive;
+  font-size: 1.1em;
+  font-weight: bold;
+  page-break-inside: avoid;
+}
+#dream div.text span.cite {
+  float: right;
+  font-size: 0.75em;
 }
 #resume > p {
-  width: 55vw;
-  margin: 1em 5vw;
+  width: 66.66666666666667vw;
+  padding: 1em 5vw;
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
+  column-gap: 5vw;
+  -webkit-column-gap: 5vw;
+  -moz-column-gap: 5vw;
+  column-fill: auto;
+  -moz-column-fill: auto;
+  height: 83.33333333333334vh;
+  box-sizing: border-box;
   float: left;
 }
 #resume > div {
