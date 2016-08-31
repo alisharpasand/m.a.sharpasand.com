@@ -104,7 +104,7 @@ h2 {
 }
 h3 {
   font-size: 1.5em;
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 h4 {
   font-size: 1.3em;
@@ -128,8 +128,9 @@ h4 {
   right: 0;
   margin-bottom: 1em;
   margin-right: 5vw;
-  font-family: Lobster, cursive;
   font-weight: 800;
+  font-size: 0.75em;
+  text-shadow: 2px 0 #d1d1d1, 0 2px #d1d1d1, -2px 0 #d1d1d1, 0 -2px #d1d1d1;
 }
 #dream #internetmap > img {
   visibility: hidden;
@@ -155,9 +156,20 @@ h4 {
   float: right;
   font-size: 0.75em;
 }
-#resume > p {
+#resume > #summary {
   width: 66.66666666666667vw;
-  padding: 1em 5vw;
+  padding: 10vh 5vw;
+  height: 83.33333333333334vh;
+  box-sizing: border-box;
+  float: left;
+}
+#resume > #summary > h3 {
+  font-family: Lobster, cursive;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 5vh;
+}
+#resume > #summary > p {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
@@ -166,18 +178,24 @@ h4 {
   -moz-column-gap: 5vw;
   column-fill: auto;
   -moz-column-fill: auto;
-  height: 83.33333333333334vh;
+  height: 58.33333333333334vh;
   box-sizing: border-box;
-  float: left;
+  padding-bottom: 2em;
 }
-#resume > div {
+#resume #resume-links {
   width: 30vw;
   float: left;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
 }
-#resume > div li {
+#resume #resume-links li {
   font-family: Lobster, cursive;
   font-size: 2em;
   margin-top: 10vh;
+}
+#resume #resume-links li:first-child {
+  margin-top: 0;
 }
 #resume:after {
   content: '';

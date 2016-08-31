@@ -128,7 +128,7 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    line-height: 1.3em;
+    line-height: 1.5em;
 }
 
 h4 {
@@ -157,8 +157,9 @@ h4 {
             right: 0;
             margin-bottom: 1em;
             margin-right: 5vw;
-            font-family: Lobster, cursive;
             font-weight: 800;
+            font-size: 0.75em;
+            text-shadow: 2px 0 @color3, 0 2px @color3, -2px 0 @color3, 0 -2px @color3;
         }
 
         > img {
@@ -191,30 +192,50 @@ h4 {
 }
 
 #resume {
-    > p {
+    > #summary {
         width: 100vw * 2 / 3;
-        padding: 1em 5vw;
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-        column-gap: 5vw;
-        -webkit-column-gap: 5vw;
-        -moz-column-gap: 5vw;
-        column-fill: auto;
-        -moz-column-fill: auto;
+        padding: 10vh 5vw;
         height: @pageheight;
         box-sizing: border-box;
         float: left;
+
+        > h3 {
+            font-family: Lobster, cursive;
+            font-size: 2em;
+            line-height: 1em;
+            margin-bottom: 5vh;
+        }
+        
+        > p {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            column-gap: 5vw;
+            -webkit-column-gap: 5vw;
+            -moz-column-gap: 5vw;
+            column-fill: auto;
+            -moz-column-fill: auto;
+            height: @pageheight - 25vh;
+            box-sizing: border-box;
+            padding-bottom: 2em;
+        }
     }
 
-    > div {
+    #resume-links {
         width: 90vw / 3;
         float: left;
+        position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
 
         li {
             font-family: Lobster, cursive;
             font-size: 2em;
             margin-top: 10vh;
+        }
+        
+        li:first-child {
+            margin-top: 0;
         }
     }
 }
