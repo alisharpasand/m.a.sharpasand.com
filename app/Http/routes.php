@@ -15,6 +15,11 @@ $app->get('/', function () use ($app) {
     return view('layout');
 });
 
-$app->get('/test', function () use ($app) {
-    return view('layout', ['title' => 'test']);
+$app->get('ecv', function(){ 
+        return redirect('/extended-curriculum-vitae-aug2016.pdf'); 
 });
+
+$app->get('resume', function(){ 
+        return redirect('/resume-aug2016.pdf'); 
+});
+
