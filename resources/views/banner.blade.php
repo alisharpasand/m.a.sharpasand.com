@@ -10,7 +10,7 @@
                                 <span itemprop="familyName">Sharpasand</span>
                             </a>
                         </h1>
-                        <h3 itemprop="jobTitle">Internet Resarch Enthusiast</h3>
+                        <h3 itemprop="jobTitle">Internet Research Enthusiast</h3>
                     </div>
                     <nav>
                         <ul>
