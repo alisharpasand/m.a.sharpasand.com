@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope="" itemtype="person">
+<html lang="en" itemscope="" itemtype="http://schema.org/Person">
     <head>
         <title>{{ isset($title) ? $title . ' | ' : '' }}Mohammad Ali Sharpasand</title>
         <style type="text/css">
