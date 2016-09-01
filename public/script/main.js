@@ -19,4 +19,5 @@ function refreshHeaderFixness()
 
 window.addEvent('scroll', refreshHeaderFixness);
 window.addEvent('resize', refreshHeaderFixness);
+window.addEvent('ready', refreshHeaderFixness);
 
