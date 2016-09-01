@@ -4,6 +4,7 @@ body {
   line-height: 1.3em;
   scroll-snap-type: proximity;
   scroll-snap-destination: 0 0;
+  min-width: 600px;
 }
 a,
 a:hover,
@@ -19,7 +20,7 @@ a:hover {
 .page {
   display: block;
   width: 100%;
-  height: 83.33333333333334vh;
+  min-height: 83.33333333333334vh;
   overflow: hidden;
   padding-top: 16.666666666666664vh;
   scroll-snap-coordinate: 0 0;
@@ -39,14 +40,15 @@ a:hover {
 #banner > div.cover {
   width: 100%;
   height: 16.666666666666664vh;
-  position: absolute;
+  min-height: calc(83.33333333333334vh - 35.66628041714948vw);
+  position: relative;
   z-index: 10;
   background-color: #000000;
 }
 #banner > div.banner {
   width: 100%;
   height: 66.66666666666667vh;
-  padding-top: 16.666666666666664vh;
+  max-height: 35.66628041714948vw;
   overflow: hidden;
   position: relative;
 }
@@ -59,6 +61,7 @@ a:hover {
 #banner header {
   position: absolute;
   width: 100%;
+  min-width: 600px;
   box-sizing: border-box;
   height: 16.666666666666664vh;
   padding-top: 3vh;
@@ -67,12 +70,11 @@ a:hover {
 }
 #banner header > div {
   float: left;
-  width: 45vw;
   font-family: 'Lobster', cursive;
   color: #d1d1d1;
 }
 #banner header nav {
-  float: left;
+  float: right;
   width: 45vw;
   margin-top: 1em;
 }
@@ -80,6 +82,11 @@ a:hover {
   float: left;
   width: 11.25vw;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  #banner header nav {
+    width: 30vw;
+  }
 }
 #banner header nav li.active {
   font-weight: bold;
@@ -137,12 +144,14 @@ h4 {
 }
 #dream div.text {
   padding: 1em 5vw;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  column-fill: auto;
-  -moz-column-fill: auto;
-  height: 27.777777777777782vh;
+  column-width: 20em;
+  -webkit-column-width: 20em;
+  -moz-column-width: 20em;
+  column-fill: balance;
+  -moz-column-fill: balance;
+  -webkit-column-fill: balance;
+  /* height: @pageheight / 3; */
+
   box-sizing: border-box;
 }
 #dream div.text em,
@@ -157,11 +166,11 @@ h4 {
   font-size: 0.75em;
 }
 #resume > #summary {
-  width: 66.66666666666667vw;
+  width: 100%;
   padding: 10vh 5vw;
-  height: 83.33333333333334vh;
+  /* height: @pageheight; */
+
   box-sizing: border-box;
-  float: left;
 }
 #resume > #summary > h3 {
   font-family: Lobster, cursive;
@@ -169,33 +178,46 @@ h4 {
   line-height: 1em;
   margin-bottom: 5vh;
 }
-#resume > #summary > p {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
+#resume > #summary > div {
+  column-width: 20em;
+  -webkit-column-width: 20em;
+  -moz-column-width: 20em;
   column-gap: 5vw;
   -webkit-column-gap: 5vw;
   -moz-column-gap: 5vw;
-  column-fill: auto;
-  -moz-column-fill: auto;
-  height: 58.33333333333334vh;
+  column-fill: balance;
+  -webkit-column-fill: balance;
+  -moz-column-fill: balance;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  /* height: @pageheight - 25vh; */
+
   box-sizing: border-box;
   padding-bottom: 2em;
 }
-#resume #resume-links {
-  width: 30vw;
-  float: left;
-  position: relative;
-  top: 50%;
-  transform: perspective(1px) translateY(-50%);
+#resume > #summary > div p {
+  margin-bottom: 1em;
 }
-#resume #resume-links li {
+#resume > #summary > div a {
+  font-style: italic;
+}
+#resume > #summary #resume-links {
+  width: 30vw;
+  float: right;
+  padding-left: 5vw;
+}
+#resume > #summary #resume-links li {
   font-family: Lobster, cursive;
   font-size: 2em;
   margin-top: 10vh;
 }
-#resume #resume-links li:first-child {
+#resume > #summary #resume-links li:first-child {
   margin-top: 0;
+}
+#resume > #summary #resume-links a {
+  font-style: normal;
+  line-height: 1em;
 }
 #resume:after {
   content: '';
